@@ -1,0 +1,353 @@
+/* =======================
+   CONFIGURAÇÕES GERAIS E VARIÁVEIS
+   ======================= */
+:root {
+    --pink: #ff85c1;
+    --purple: #a777e3;
+    --dark-purple: #2c003e;
+    --white: #ffffff;
+    --light-gray: #f9f9f9;
+    --dark-text: #333;
+
+    --font-headings: 'Poppins', sans-serif;
+    --font-body: 'Muli', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--white);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-headings);
+    font-weight: 700;
+    color: var(--dark-purple);
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* =======================
+   BOTÃO CTA (CALL TO ACTION)
+   ======================= */
+.cta-button {
+    display: inline-block;
+    background: linear-gradient(45deg, var(--pink), var(--purple));
+    color: var(--white);
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: var(--font-headings);
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(255, 133, 193, 0.4);
+}
+
+.final-cta {
+    font-size: 1.3rem;
+    padding: 20px 50px;
+}
+
+
+/* =======================
+   SEÇÃO HERO
+   ======================= */
+.hero {
+    background-color: var(--light-gray);
+    text-align: center;
+    padding: 60px 0;
+    border-bottom: 5px solid var(--pink);
+}
+
+.hero .logo {
+    max-width: 150px;
+    margin-bottom: 30px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-title span {
+    background: linear-gradient(45deg, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+
+/* =======================
+   SEÇÃO DE "DOR"
+   ======================= */
+.pain-section {
+    background-color: var(--white);
+}
+
+.pain-points {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.pain-points .point {
+    text-align: center;
+    max-width: 250px;
+}
+
+
+.pain-points .point img {
+    max-width: 130px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+.pain-conclusion {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--dark-purple);
+}
+
+
+/* =======================
+   SEÇÃO DA SOLUÇÃO
+   ======================= */
+.solution-section {
+    background-color: var(--light-gray);
+}
+
+.solution-section .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.solution-content {
+    flex: 1;
+}
+
+.solution-content h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.solution-content ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.solution-content ul li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.solution-content ul li span {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.solution-image {
+    flex: 1;
+    text-align: center;
+}
+
+.solution-image img {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* =======================
+   SEÇÃO DE BENEFÍCIOS
+   ======================= */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.benefit-card {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border: 2px solid var(--light-gray);
+    transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--pink);
+}
+
+.benefit-card h3 {
+    margin-bottom: 15px;
+    color: var(--purple);
+}
+
+/* =======================
+   SEÇÃO DE PREÇO
+   ======================= */
+.pricing-section {
+    background: linear-gradient(180deg, var(--dark-purple) 0%, #1a0024 100%);
+    color: var(--white);
+    text-align: center;
+}
+
+.pricing-section h2 {
+    color: var(--white);
+}
+
+.pricing-subtitle {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    opacity: 0.9;
+}
+
+.price-box {
+    background-color: var(--white);
+    color: var(--dark-purple);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: 0 auto 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.price-box .access-type {
+    font-family: var(--font-headings);
+    font-weight: 700;
+    color: var(--pink);
+}
+
+.price-box .price {
+    font-family: var(--font-headings);
+    font-weight: 900;
+    font-size: 4rem;
+    margin: 10px 0;
+}
+
+.price-box .price span {
+    font-size: 5rem;
+}
+
+.price-box .no-monthly-fees {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.guarantee {
+    margin-top: 20px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* =======================
+   SEÇÃO DE FAQ
+   ======================= */
+.faq-section {
+    background-color: var(--light-gray);
+}
+.faq-section .container {
+    max-width: 800px;
+}
+.faq-item {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--purple);
+}
+
+.faq-item h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* =======================
+   RODAPÉ
+   ======================= */
+footer {
+    background-color: var(--dark-purple);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a {
+    color: var(--pink);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* =======================
+   RESPONSIVIDADE
+   ======================= */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+    .pain-points {
+        flex-direction: column;
+        align-items: center;
+    }
+    .solution-section .container {
+        flex-direction: column;
+    }
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    .price-box .price {
+        font-size: 3rem;
+    }
+    .price-box .price span {
+        font-size: 4rem;
+    }
+}
